@@ -21,6 +21,7 @@ This repository contains the dataset and relevant materials for a systematic lit
   - **`summary_statistics.csv`**: A CSV file with summary statistics of the analyzed data.
 
 ## Getting Started
+
 ### Prerequisites
 - Python 3.7 or higher
 - Required Python packages (listed in `requirements.txt`)
@@ -28,33 +29,48 @@ This repository contains the dataset and relevant materials for a systematic lit
 ### Installation
 1. Clone the repository:
 <pre>
-  git <span style="color:orange;">clone</span> https://github.com/hayatu4islam/systematic_literature_review
-  <span style="color:orange;">cd</span> SLR-Fault-Detection-CPS
+  git <span style="color: orange;">clone</span> https://github.com/hayatu4islam/systematic_literature_review
+  <span style="color: red;">cd</span> SLR-Fault-Detection-CPS
 </pre>
 2.  Install the required Python packages
+<pre>
+  pip install -r requirements.txt
+</pre>
 
 ### Usage
 1. Data Extraction:
 - Use the 'data_extraction.py' script to extract data from the collected papers.
 <pre>
-```bash
-# List all files in the current directory
-ls -la
-
-# Change to the home directory
-cd ~
-
-# Display the current path
-pwd
-```
+python scripts/data_extraction.py
 </pre>
 
 2.  Visualisation:
 - Generate visualisation from the analysis results using 'visualisation.py'
 <pre>
-  ```bash
-  python scripts/data_extraction.py
-  ```
-  
+  python scripts/data_extraction.py  
 </pre>
-3.   
+
+## Data Description
+**papers.csv**
+- **`Document_Title`**: title of the paper.
+- **`Authors`**: Authors of the paper.
+- **`Authors_Affiliations`**: Affiliations of the authors.
+- **`Publication_Title`**: Title of the publication (i.e. journal or conference title).
+- **`Publication_Year`**: Year of publication.
+- **`Abstract`**: Abstract of the paper.
+
+**extracted_data.csv**
+- **`paper_id`**: Unique identifier for each paper.
+-   a
+-   b
+-   c
+
+## Contributing
+We welcome contributions to this repository. If you have suggestions, bug reports, or enhancements, please submit a pull request or open an issue.
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Submit a pull request with a detailed description of your changes.
+
+## Acknowledgements
+We thank all the researchers whose work contributed to this dataset and the systematic literature review. A special recognition to Hanouf al-Ghanmy.
