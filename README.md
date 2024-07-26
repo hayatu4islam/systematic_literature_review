@@ -5,7 +5,7 @@ This repository contains the dataset and relevant materials for a systematic lit
 - **data**/: Contains the datasets used for the SLR.
   - **`papers.csv`**: A CSV file containing the list of papers included in the review.
   - **`extracted_data.csv`**: A CSV file with data extracted from the included papers.
-  - **`metadata/`**: Directory containing metadata files for each paper.
+  - **`metadata.csv`**: A CSV file containing metadata files for each database.
     
 - **scripts/**: Includes scripts used for data extraction, analysis, and visualization.
   - **`data_extraction.py`**: Script for extracting data from the papers.
